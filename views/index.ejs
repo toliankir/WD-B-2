@@ -9,10 +9,14 @@
 <body>
 
 <div class="container pt-3">
-<% methods.forEach(method => { %>
-     <%- include('form', {method: method}) %>
-<% });%>
+<% users.forEach(user => { %>
+    <p><%= user.login %></p>
+<% }); %>
 
+
+<%- include('form') %>
 </div>
+
 </body>
+<script src="./script/script.js"></script>
 </html>
