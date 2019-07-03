@@ -1,35 +1,15 @@
-const mongoose = require('mongoose');
+const bcrypt = require("bcrypt");
+const saltRounds = 10;
+const pass = "password";
 
-const url = 'mongodb://localhost/my_database';
 
-mongoose.connect(url, {useNewUrlParser: true}, function (err) {
-    if (err) throw err;
-    console.log('Successfully connected');
+bcrypt.hash(pass, saltRounds, function (err, hash) {
+    console.log(hash);
+
+    bcrypt.compare(pass, hash, function (err, res) {
+        console.log(`pass ${res}`);
+    });
+    bcrypt.compare('123', hash, function (err, res) {
+        console.log(`non-pass ${res}`);
+    });
 });
-
-const userSchema = mongoose.Schema({
-    _id: mongoose.Schema.Types.ObjectId,
-    name: {
-        firstName: String,
-        lastName: String
-    },
-    desc: String,
-    created: Date
-});
-
-const User = mongoose.model('User', userSchema);
-User.find({desc: 'Temp'});
-// const userModel = new User({
-//     _id: new mongoose.Types.ObjectId,
-//     name:{
-//         firstName: 'Temp first name',
-//         lastName: 'Temp last name'
-//     },
-//     desc: 'Temp desctioption'
-// });
-//
-// userModel.save(function (err) {
-//    if (err) throw err;
-//    console.log('User saved');
-// });
-

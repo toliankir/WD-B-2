@@ -9,10 +9,9 @@
 <body>
 
 <div class="container pt-3">
-<% users.forEach(user => { %>
-    <p><%= user.login %></p>
-<% }); %>
-
+<h3>User list</h3>
+<ul class="user-list" id="user-list">
+</ul>
 
 <%- include('form') %>
 </div>

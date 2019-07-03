@@ -1,3 +1,5 @@
+require("dotenv").config()
+
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -7,12 +9,9 @@ const bodyParser = require('body-parser');
 const User = require('./userModel');
 
 const server = express();
-const port = 3000;
-const methods = ['get', 'post', 'put', 'delete', 'update'];
-const url = 'mongodb://localhost/my_database';
 
 
-mongoose.connect(url, {useNewUrlParser: true}, function (err) {
+mongoose.connect(process.env.DB_URL, {useNewUrlParser: true}, function (err) {
     if (err) throw err;
     console.log('Mongoose DB successfully connected');
 });
@@ -26,8 +25,7 @@ server.use(bodyParser.json());
 server.get('/', (req, res) => {
     User.find().exec(function (err, users) {
         if (err) throw err;
-        console.log(users);
-        res.render('index', {methods: methods, users: users})
+        res.render('index', {users: users})
     });
 
 });
@@ -42,8 +40,22 @@ server.post('/api', (req, res) => {
         if (err) throw err;
         res.send(JSON.stringify((req.body)));
     });
-
-
 });
 
-server.listen(port, () => console.log('Server start on 3000 port.'));
+server.get('/api', (req, res) => {
+    console.log("GET");
+    User.find().exec(function (err, users) {
+        if (err) throw err;
+        res.send(JSON.stringify(users));
+    });
+});
+
+server.delete('/api', (req, res) => {
+    User.findByIdAndDelete(req.body.id, function (err) {
+        if (err) throw err;
+        res.send(`Delete ${req.body.id}`);
+    });
+});
+
+
+server.listen(process.env.PORT, () => console.log(`Server start on ${process.env.PORT} port.`));
