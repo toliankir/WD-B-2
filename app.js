@@ -1,5 +1,6 @@
 require("dotenv").config()
 
+const bcypt = require('bcrypt');
 const express = require('express');
 const path = require('path');
 const mongoose = require('mongoose');
@@ -8,6 +9,7 @@ const bodyParser = require('body-parser');
 
 const User = require('./userModel');
 
+const saltRounds = 10;
 const server = express();
 
 
@@ -32,14 +34,17 @@ server.get('/', (req, res) => {
 
 server.post('/api', (req, res) => {
     console.log("POST");
-    User.create({
-        _id: new mongoose.Types.ObjectId,
-        login: req.body.login,
-        password: req.body.password
-    }, function (err) {
-        if (err) throw err;
-        res.send(JSON.stringify((req.body)));
+    bcypt.hash(req.body.password, saltRounds, function (err, hash) {
+        User.create({
+            _id: new mongoose.Types.ObjectId,
+            login: req.body.login,
+            password: hash
+        }, function (err) {
+            if (err) throw err;
+            res.send(JSON.stringify((req.body)));
+        });
     });
+
 });
 
 server.get('/api', (req, res) => {
