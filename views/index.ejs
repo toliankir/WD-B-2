@@ -14,8 +14,19 @@
 </ul>
 
 <%- include('form') %>
+
+<div>
+<h4>Users that has been when page loads.</h4>
+<% users.forEach( (user, index) => {%>
+<span> <%= user.login %>
+    <% if (index !== users.length - 1) {%>
+    ,
+    <% } %>
+</span>
+<% });%>
 </div>
 
+</div>
 </body>
 <script src="./script/script.js"></script>
 </html>
