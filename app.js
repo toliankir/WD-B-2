@@ -26,7 +26,7 @@ fs.access(dbFile, fs.constants.F_OK, (err) => {
     fs.readFile(dbFile, (err, data) => {
         if (err) throw err;
         users.push(...JSON.parse(data));
-     })
+    })
 });
 
 
@@ -35,7 +35,6 @@ server.get('/', (req, res) => {
 });
 
 server.post('/api', (req, res) => {
-    console.log("POST");
     users.push({
         id: users.length > 0 ? users[users.length - 1].id + 1 : 0,
         login: req.body.login,
@@ -46,7 +45,6 @@ server.post('/api', (req, res) => {
 });
 
 server.get('/api', (req, res) => {
-    console.log("GET");
     res.send(JSON.stringify(users));
 });
 
