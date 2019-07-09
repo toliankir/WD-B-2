@@ -2,12 +2,12 @@ const apiUrl = "./api";
 const userList = $("#user-list");
 
 function syncUserList() {
-    userList.html("");
     $.ajax({
         url: apiUrl,
         dataType: 'json',
         type: 'GET',
         success: (users) => {
+            userList.html("");
             users.forEach((user) => {
                 userList.append($(`<li class="row p-1"><span class="col-3">${user.login}</span></li>`)
                     .append($('<a class="btn btn-danger btn-sm text-white">Delete</a>').on('click', () => {
