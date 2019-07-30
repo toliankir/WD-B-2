@@ -5,7 +5,6 @@ const ejs = require('ejs');
 const fs = require('fs');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
-const winston = require('winston');
 
 const logger = require('./config/winston');
 
