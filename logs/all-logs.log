@@ -1,24 +1,110 @@
-{"message":"::1 - - [09/Jul/2019:22:14:27 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:27 +0000] \"GET /css/bootstrap.min.css HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:27 +0000] \"GET /script/jquery.min.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:27 +0000] \"GET /script/script.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:27 +0000] \"GET /css/bootstrap.min.css.map HTTP/1.1\" 404 164 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:27 +0000] \"GET /api HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:29 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:29 +0000] \"GET /css/bootstrap.min.css HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:29 +0000] \"GET /script/jquery.min.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:29 +0000] \"GET /script/script.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:29 +0000] \"GET /css/bootstrap.min.css.map HTTP/1.1\" 404 164 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:29 +0000] \"GET /api HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:37 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:37 +0000] \"GET /css/bootstrap.min.css HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:37 +0000] \"GET /script/jquery.min.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:37 +0000] \"GET /script/script.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:37 +0000] \"GET /css/bootstrap.min.css.map HTTP/1.1\" 404 164 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:37 +0000] \"GET /api HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:38 +0000] \"GET / HTTP/1.1\" 304 - \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:38 +0000] \"GET /css/bootstrap.min.css HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:38 +0000] \"GET /script/jquery.min.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:38 +0000] \"GET /script/script.js HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:38 +0000] \"GET /css/bootstrap.min.css.map HTTP/1.1\" 404 164 \"-\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
-{"message":"::1 - - [09/Jul/2019:22:14:38 +0000] \"GET /api HTTP/1.1\" 304 - \"http://localhost:3000/\" \"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/75.0.3770.100 Safari/537.36\"\n","level":"info"}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Index request"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m18.713 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /css/bootstrap.min.css \u001b[36m304 \u001b[0m4.491 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/jquery.min.js \u001b[36m304 \u001b[0m7.874 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/script.js \u001b[36m304 \u001b[0m0.444 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[36m304 \u001b[0m9.047 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Index request"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m18.506 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /css/bootstrap.min.css \u001b[36m304 \u001b[0m2.970 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/jquery.min.js \u001b[36m304 \u001b[0m0.695 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/script.js \u001b[36m304 \u001b[0m0.424 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[36m304 \u001b[0m1.501 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API POST request"}
+{"message":"\u001b[0mPOST /api \u001b[31m500 \u001b[0m29.738 ms - 1255\u001b[0m\n","level":"info"}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Index request"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m25.112 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/jquery.min.js \u001b[36m304 \u001b[0m2.715 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /css/bootstrap.min.css \u001b[36m304 \u001b[0m0.448 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/script.js \u001b[36m304 \u001b[0m0.951 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[36m304 \u001b[0m1.896 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API POST request"}
+{"message":"\u001b[0mPOST /api \u001b[31m500 \u001b[0m19.510 ms - 1254\u001b[0m\n","level":"info"}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Index request"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m30.999 ms - 983\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /css/bootstrap.min.css \u001b[36m304 \u001b[0m3.979 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/jquery.min.js \u001b[36m304 \u001b[0m3.978 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/script.js \u001b[36m304 \u001b[0m0.444 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[31m500 \u001b[0m4.133 ms - 1300\u001b[0m\n","level":"info"}
+{"level":"info","message":"Index request"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m3.281 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /css/bootstrap.min.css \u001b[36m304 \u001b[0m1.152 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/jquery.min.js \u001b[36m304 \u001b[0m3.759 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/script.js \u001b[36m304 \u001b[0m4.148 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[31m500 \u001b[0m1.425 ms - 1300\u001b[0m\n","level":"info"}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Index request"}
+{"message":"\u001b[0mGET / \u001b[32m200 \u001b[0m23.286 ms - 1175\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /css/bootstrap.min.css \u001b[36m304 \u001b[0m3.675 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/jquery.min.js \u001b[36m304 \u001b[0m4.270 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/script.js \u001b[36m304 \u001b[0m1.170 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[31m500 \u001b[0m6.050 ms - 1300\u001b[0m\n","level":"info"}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Index request"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m24.350 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /css/bootstrap.min.css \u001b[36m304 \u001b[0m3.473 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/jquery.min.js \u001b[36m304 \u001b[0m8.955 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/script.js \u001b[36m304 \u001b[0m11.169 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[31m500 \u001b[0m4.842 ms - 1300\u001b[0m\n","level":"info"}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Index request"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m26.136 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /css/bootstrap.min.css \u001b[36m304 \u001b[0m4.155 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/jquery.min.js \u001b[36m304 \u001b[0m4.471 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/script.js \u001b[36m304 \u001b[0m3.185 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[32m200 \u001b[0m3.547 ms - 228\u001b[0m\n","level":"info"}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Index request"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m25.749 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /css/bootstrap.min.css \u001b[36m304 \u001b[0m7.517 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/jquery.min.js \u001b[36m304 \u001b[0m7.213 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/script.js \u001b[36m304 \u001b[0m0.602 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[36m304 \u001b[0m1.398 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API DELETE request"}
+{"message":"\u001b[0mDELETE /api \u001b[31m500 \u001b[0m16.451 ms - 1332\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[36m304 \u001b[0m3.040 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API DELETE request"}
+{"message":"\u001b[0mDELETE /api \u001b[31m500 \u001b[0m2.376 ms - 1332\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[36m304 \u001b[0m1.354 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Index request"}
+{"message":"\u001b[0mGET / \u001b[36m304 \u001b[0m25.763 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /css/bootstrap.min.css \u001b[36m304 \u001b[0m3.016 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/jquery.min.js \u001b[36m304 \u001b[0m1.159 ms - -\u001b[0m\n","level":"info"}
+{"message":"\u001b[0mGET /script/script.js \u001b[36m304 \u001b[0m0.411 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[36m304 \u001b[0m2.723 ms - -\u001b[0m\n","level":"info"}
+{"level":"info","message":"API DELETE request"}
+{"message":"\u001b[0mDELETE /api \u001b[32m200 \u001b[0m16.898 ms - 21\u001b[0m\n","level":"info"}
+{"level":"info","message":"API GET request"}
+{"message":"\u001b[0mGET /api \u001b[32m200 \u001b[0m1.807 ms - 185\u001b[0m\n","level":"info"}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
