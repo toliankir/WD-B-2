@@ -1,6 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-const logger = require('./config/winston');
+const logger = require('./winston');
 
 const dbFile = path.join(__dirname, process.env.DB_FILE);
 const users = [];

@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const morgan = require('morgan');
 
 const db = require('./db');
-const logger = require('./config/winston');
+const logger = require('./winston');
 
 db.initDB();
 
@@ -44,4 +44,3 @@ server.delete('/api', (req, res) => {
 server.listen(process.env.PORT, () => {
     logger.log({ level: 'info', message: `Server start on ${process.env.PORT} port.` });
 });
-
