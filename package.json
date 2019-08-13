@@ -15,11 +15,11 @@
     "ejs": "^2.6.2",
     "express": "^4.17.1",
     "morgan": "^1.9.1",
-    "winston": "^3.2.1"
+    "winston": "^3.2.1",
+    "winston-daily-rotate-file": "^3.10.0"
   },
   "devDependencies": {
-    "nodemon": "^1.19.1",
-    "winston-daily-rotate-file": "^3.10.0"
+    "nodemon": "^1.19.1"
   },
   "engines": {
     "node": "10.x"
