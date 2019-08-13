@@ -4,12 +4,12 @@ const logger = require('./config/winston');
 
 const dbFile = path.join(__dirname, process.env.DB_FILE);
 const users = [];
-// function
+
 module.exports.saveDB = function () {
     fs.writeFile(dbFile, JSON.stringify(users), 'utf8', (err) => {
         if (err) {
-            return;
             logger.log({ level: 'warn', message: `Database writeing error.` });
+            return;
         }
     });
 }

@@ -108,3 +108,5 @@
 {"message":"\u001b[0mGET /api \u001b[32m200 \u001b[0m1.807 ms - 185\u001b[0m\n","level":"info"}
 {"level":"info","message":"Server start on 3000 port."}
 {"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
+{"level":"info","message":"Server start on 3000 port."}
