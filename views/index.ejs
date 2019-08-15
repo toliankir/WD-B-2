@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Node test</title>
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <script src="./script/jquery.min.js"></script>
 </head>
+
 <body>
 
-<div class="container pt-3">
-<h3>User list</h3>
-<ul class="user-list" id="user-list">
-</ul>
+    <div class="container pt-3">
+        <h3>User list</h3>
+        <ul class="user-list" id="user-list">
+        </ul>
 
-<%- include('form') %>
+        <%- include('form') %>
 
-<div>
-<h4>Users that has been when page loads.</h4>
-<% users.forEach( (user, index) => {%>
-<span> <%= user.login %>
-    <% if (index !== users.length - 1) {%>
-    ,
-    <% } %>
-</span>
-<% });%>
-</div>
+        <div>
+            <h4>Users that has been when page loads.</h4>
+            <% users.forEach( (user, index) => {%>
+            <span> <%= user.login %>
+                <% if (index !== users.length - 1) {%>
+                ,
+                <% } %>
+            </span>
+            <% });%>
+        </div>
 
-</div>
+    </div>
 </body>
 <script src="./script/script.js"></script>
+
 </html>

@@ -1,58 +1,44 @@
 const apiUrl = "./api";
 const userList = $("#user-list");
 
-function syncUserList() {
-    $.ajax({
-        url: apiUrl,
-        dataType: 'json',
-        type: 'GET',
-        success: (users) => {
-            userList.html("");
-            users.forEach((user) => {
-                userList.append($(`<li class="row p-1"><span class="col-3">${user.login}</span></li>`)
-                    .append($('<a class="btn btn-danger btn-sm text-white">Delete</a>').on('click', () => {
-                        deleteUserById(user.id);
-                        syncUserList();
-                    })));
-            });
-        },
-        error: (XHR) => {
-            console.log(XHR);
-        }
+async function syncUserList() {
+    const apiResponse = await fetch(apiUrl);
+    const users = await apiResponse.json();
+    userList.html("");
+    users.forEach((user) => {
+        userList.append($(`<li class="row p-1"><span class="col-3">${user.login}</span></li>`)
+            .append($('<a class="btn btn-danger btn-sm text-white">Delete</a>').on('click', () => {
+                deleteUserById(user.id);
+                syncUserList();
+            })));
     });
 }
 
-function deleteUserById(id) {
-    $.ajax({
-        url: apiUrl,
-        type: 'DELETE',
-        data: {
-            id: id
+
+async function deleteUserById(id) {
+    const apiResponse = await fetch(apiUrl, {
+        method: 'DELETE',
+        headers: {
+            'Content-Type': 'application/json',
         },
-        success: (data) => {
-        },
-        error: (XHR) => {
-            console.log(XHR)
-        }
+        body: JSON.stringify({ id })
     });
 }
 
-$("#user-add").on("submit", ev => {
+$("#user-add").on("submit", async (ev) => {
     ev.preventDefault();
-    $.ajax({
-        url: apiUrl,
-        type: 'POST',
-        data: {
+
+    const apiResponse = await fetch(apiUrl, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
             login: $("#username").val(),
             password: $("#password").val()
-        },
-        success: () => {
-            syncUserList();
-        },
-        error: (XHR) => {
-            console.log(XHR)
-        }
+        })
     });
+    syncUserList();
 });
 
 $(() => {
