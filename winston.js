@@ -14,7 +14,7 @@ function formatMessage(message) {
     try {
         parsedMessage = JSON.parse(message);
     } catch (e) {
-        return message;
+        return `${colors.BgWhite} ${message} ${colors.Reset}`;
     }
     return `${colorsForMethods[parsedMessage.method]} ${parsedMessage.method} ${parsedMessage.originalUrl} ${colors.Reset}`;
     
