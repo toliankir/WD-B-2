@@ -2,10 +2,7 @@ require("dotenv").config()
 const express = require('express');
 const path = require('path');
 const ejs = require('ejs');
-const fs = require('fs');
 const bodyParser = require('body-parser');
-// const morgan = require('morgan');
-
 const db = require('./db');
 const logger = require('./winston');
 
@@ -13,7 +10,6 @@ db.initDB();
 
 const server = express();
 server.set('view engine', 'ejs');
-// server.use(morgan('dev', { stream: logger.stream }));
 server.use(logger);
 server.use(express.static(path.join(__dirname, 'public')));
 server.use(bodyParser.urlencoded({ extended: false }));
