@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const { winstonLogger} = require('./logger');
 const appRootDir = require('../helpers/app_root_dir');
-
 const dbFile = path.join(appRootDir, 'db',process.env.DB_FILE || 'default_db.json');
 const users = [];
 
@@ -49,7 +48,6 @@ module.exports.deleteUser = function (id) {
     users.splice(userId, 1);
     this.saveDB();
 }
-
 
 function createDbFile() {
     fs.writeFileSync(dbFile, JSON.stringify([]), {flag: 'w'}, err => {

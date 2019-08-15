@@ -3,7 +3,6 @@ const path = require('path');
 const colors = require('../constants/colors');
 const appRootDir = require('../helpers/app_root_dir');
 require('winston-daily-rotate-file');
-
 const colorsForMethods = {
     GET: colors.FgRed,
     POST: colors.FgBlue,
@@ -43,7 +42,6 @@ const winstonLogger = new winston.createLogger({
         }),
         new winston.transports.Console({
             format: winston.format.combine(
-
                 winston.format.printf(({ level, timestamp, message }) => {
                     return `${level}: ${timestamp} ${formatMessageConsole(message)}`;
                 }),
@@ -53,8 +51,6 @@ const winstonLogger = new winston.createLogger({
         })
     ]
 });
-
-
 
 const logger = ({ method, originalUrl }, res, next) => {
     const msg = {
