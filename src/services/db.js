@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
-// const logger = require('./winston');
-
+const { winstonLogger} = require('./logger');
 const appRootDir = require('../helpers/app_root_dir');
 
 const dbFile = path.join(appRootDir, 'db',process.env.DB_FILE || 'default_db.json');
@@ -10,7 +9,7 @@ const users = [];
 module.exports.saveDB = function () {
     fs.writeFile(dbFile, JSON.stringify(users), 'utf8', (err) => {
         if (err) {
-            // logger.log({ level: 'warn', message: `Database writeing error.` });
+            winstonLogger.log({ level: 'warn', message: `Database writing error.` });
             return;
         }
     });
@@ -19,7 +18,7 @@ module.exports.saveDB = function () {
 module.exports.initDB = function () {
         fs.access(dbFile, fs.constants.F_OK, (err) => {
         if (err) {
-            console.log('File dont exists');
+            winstonLogger.log({level: 'warn', message: 'Database dose not exist.'});
             createDbFile();
             return;
         }
